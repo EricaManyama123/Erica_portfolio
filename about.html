@@ -8,15 +8,13 @@
 
 <title>About | Erica Manyama</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
 <style>
 
 body{
 margin:0;
-font-family:Poppins;
-color:white;
+font-family:Arial, sans-serif;
 background:#0d1b2a;
+color:white;
 }
 
 /* NAVBAR */
@@ -51,21 +49,36 @@ color:#c084fc;
 
 /* ABOUT SECTION */
 
-.about{
-max-width:800px;
-margin:auto;
-padding:120px 20px;
+.about-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:60px;
+padding:100px;
 }
 
-.about h1{
-font-size:38px;
-margin-bottom:30px;
+.about-text{
+flex:1;
 }
 
-.about p{
-line-height:1.8;
-font-size:18px;
+.about-text h1{
 margin-bottom:20px;
+font-size:36px;
+}
+
+.about-text p{
+line-height:1.8;
+margin-bottom:18px;
+font-size:17px;
+}
+
+.about-image{
+flex:1;
+text-align:center;
+}
+
+.about-image img{
+max-width:350px;
 }
 
 /* FOOTER */
@@ -74,7 +87,7 @@ footer{
 text-align:center;
 padding:30px;
 border-top:1px solid #333;
-margin-top:100px;
+margin-top:80px;
 color:#aaa;
 }
 
@@ -100,16 +113,18 @@ color:#aaa;
 
 </nav>
 
-<section class="about">
+<section class="about-container">
+
+<div class="about-text">
 
 <h1>About Me</h1>
 
 <p>
-My name is Erica Joshua, and I am from Tanzania, East Africa. I am currently a third-year student at Lovely Professional University, majoring in Data Science and Data Engineering. I consider myself a passionate and curious individual who enjoys learning and solving problems through data.
+My name is Erica Joshua, and I am from Tanzania, East Africa. I am currently a third-year student at Lovely Professional University, majoring in Data Science and Data Engineering. I consider myself a passionate and curious individual who enjoys learning and solving problems through data. My interest in data stems from a curiosity about how information and patterns can help explain real-world challenges and support better decision-making.
 </p>
 
 <p>
-Throughout my academic journey, I have developed experience working with tools such as <strong>Python</strong>, <strong>SQL</strong>, <strong>Excel</strong>, and <strong>Power BI</strong> to clean, analyze, and visualize data effectively. I enjoy transforming complex information into clear insights that help people better understand data.
+Throughout my academic journey, I have developed experience working with tools such as <strong>Python</strong>, <strong>SQL</strong>, <strong>Excel</strong>, and <strong>Power BI</strong> to clean, analyze, and visualize data effectively. I enjoy exploring datasets, identifying trends, and transforming complex information into clear insights that help people better understand data.
 </p>
 
 <p>
@@ -117,12 +132,21 @@ Alongside my technical skills, I value strong soft skills such as attention to d
 </p>
 
 <p>
-Outside of academics, I enjoy participating in sports ⚽ and exploring new places 🌍. These experiences allow me to stay active, explore new cultures, and gain new perspectives that inspire both personal and professional growth.
+Outside of academics, I enjoy participating in sports ⚽ and traveling ✈️. These experiences allow me to stay active, explore new cultures, and gain new perspectives that inspire both personal and professional growth.
 </p>
 
 <p>
 My goal is to build a career where I am considered a valuable asset and can use data to help organizations make informed decisions and create meaningful impact.
 </p>
+
+</div>
+
+<div class="about-image">
+
+<img src="https://cdni.iconscout.com/illustration/premium/thumb/data-analysis-illustration-download-in-svg-png-gif-file-formats--analytics-logo-business-pack-design-development-illustrations-4018562.png" alt="Data Analytics Illustration">
+
+</div>
+
 </section>
 
 <footer>
