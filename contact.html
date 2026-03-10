@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
@@ -8,67 +7,43 @@
 
 <title>Contact | Erica Manyama</title>
 
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 <style>
 
 body{
 margin:0;
-font-family:Arial;
-background:#0d1b2a;
+font-family: 'Poppins', sans-serif;
+background:#0f172a;
 color:white;
 }
 
-/* STARS */
+/* STAR BACKGROUND */
 
 body::before{
 content:"";
 position:fixed;
 width:100%;
 height:100%;
-background-image:
-radial-gradient(white 1px, transparent 1px);
+background-image:radial-gradient(white 1px, transparent 1px);
 background-size:50px 50px;
 opacity:0.2;
 z-index:-1;
 }
 
-/* NAV */
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 60px;
-}
-
-.logo{
-font-size:22px;
-color:#c084fc;
-font-weight:bold;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-gap:30px;
-}
-
-nav ul a{
-text-decoration:none;
-color:white;
-}
-
-/* HEADER */
+/* TITLE */
 
 .contact-header{
 text-align:center;
-padding:80px 20px;
+padding:70px 20px;
 }
 
 .contact-header h1{
 font-size:40px;
 }
 
-/* CONTACT GRID */
+/* GRID */
 
 .contact-grid{
 display:flex;
@@ -82,11 +57,26 @@ flex-wrap:wrap;
 
 .contact-info{
 max-width:350px;
-font-size:18px;
 }
 
-.contact-info p{
-margin:15px 0;
+.contact-item{
+display:flex;
+align-items:center;
+margin-bottom:25px;
+}
+
+.contact-item i{
+font-size:20px;
+color:#a78bfa;
+margin-right:15px;
+width:30px;
+}
+
+/* LINKS */
+
+.contact-item a{
+color:white;
+text-decoration:none;
 }
 
 /* MAP */
@@ -100,14 +90,14 @@ border:none;
 
 /* FORM */
 
-.contact-form{
+.form-section{
 display:flex;
 justify-content:center;
 padding:60px;
 }
 
-.contact-form form{
-width:500px;
+form{
+width:600px;
 }
 
 input, textarea{
@@ -123,13 +113,11 @@ height:150px;
 resize:none;
 }
 
-/* BUTTON */
-
 button{
-background:#0d9488;
+background:#14b8a6;
 color:white;
 border:none;
-padding:15px 30px;
+padding:14px 30px;
 font-size:16px;
 border-radius:6px;
 cursor:pointer;
@@ -139,12 +127,14 @@ button:hover{
 background:#0f766e;
 }
 
+/* FOOTER */
+
 footer{
 text-align:center;
 padding:30px;
 border-top:1px solid #333;
-margin-top:60px;
 color:#aaa;
+margin-top:40px;
 }
 
 </style>
@@ -153,26 +143,9 @@ color:#aaa;
 
 <body>
 
-<nav>
-
-<div class="logo">EM.</div>
-
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="skills.html">Skills</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="certifications.html">Certifications</a></li>
-<li><a href="resume.html">Resume</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-
-</nav>
-
-
 <section class="contact-header">
 
-<h1>Let's Talk</h1>
+<h1>Contact Me</h1>
 <p>Feel free to reach out for collaborations or opportunities.</p>
 
 </section>
@@ -184,27 +157,31 @@ color:#aaa;
 
 <div class="contact-info">
 
-<p>📧 Email:<br>
-<a href="mailto:ericacjmanyama@gmail.com" style="color:#c084fc;">
+<div class="contact-item">
+<i class="fa-solid fa-envelope"></i>
+<a href="mailto:ericacjmanyama@gmail.com">
 ericacjmanyama@gmail.com
 </a>
-</p>
+</div>
 
-<p>💻 GitHub:<br>
-<a href="https://github.com/EricaManyama123" target="_blank" style="color:#c084fc;">
+<div class="contact-item">
+<i class="fa-brands fa-github"></i>
+<a href="https://github.com/EricaManyama123" target="_blank">
 github.com/EricaManyama123
 </a>
-</p>
+</div>
 
-<p>💼 LinkedIn:<br>
-<a href="https://www.linkedin.com/in/erica-joshua-9749272a1/" target="_blank" style="color:#c084fc;">
+<div class="contact-item">
+<i class="fa-brands fa-linkedin"></i>
+<a href="https://www.linkedin.com/in/erica-joshua-9749272a1/" target="_blank">
 LinkedIn Profile
 </a>
-</p>
+</div>
 
-<p>📱 Phone:<br>
+<div class="contact-item">
+<i class="fa-solid fa-phone"></i>
 +91 6280388425
-</p>
+</div>
 
 </div>
 
@@ -222,7 +199,7 @@ src="https://www.google.com/maps?q=Lovely%20Professional%20University&output=emb
 
 <!-- CONTACT FORM -->
 
-<section class="contact-form">
+<section class="form-section">
 
 <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
 
@@ -248,5 +225,4 @@ src="https://www.google.com/maps?q=Lovely%20Professional%20University&output=emb
 </footer>
 
 </body>
-
 </html>
