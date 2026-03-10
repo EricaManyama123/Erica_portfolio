@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
@@ -12,16 +11,11 @@
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins', sans-serif;
-}
-
 body{
-background:#0f172a;
+margin:0;
+font-family:Poppins;
 color:white;
+background:#0d1b2a;
 overflow-x:hidden;
 }
 
@@ -35,9 +29,10 @@ left:0;
 width:100%;
 height:100%;
 background-image:
+radial-gradient(white 1px, transparent 1px),
 radial-gradient(white 1px, transparent 1px);
-background-size:40px 40px;
-opacity:0.15;
+background-size:50px 50px;
+opacity:0.2;
 z-index:-1;
 }
 
@@ -47,19 +42,19 @@ nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:25px 10%;
+padding:20px 60px;
 }
 
 .logo{
-font-size:26px;
-font-weight:600;
+font-size:22px;
+font-weight:bold;
 color:#c084fc;
 }
 
 nav ul{
 display:flex;
-gap:30px;
 list-style:none;
+gap:30px;
 }
 
 nav ul li a{
@@ -72,58 +67,49 @@ nav ul li a:hover{
 color:#c084fc;
 }
 
-/* HERO */
+/* HERO SECTION */
 
 .hero{
+height:80vh;
 display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:120px 20px;
 flex-direction:column;
-}
-
-.hero h3{
-font-size:30px;
-margin-bottom:10px;
+justify-content:center;
+align-items:center;
+text-align:center;
 }
 
 .hero h1{
-font-size:55px;
-color:#c084fc;
-margin-bottom:20px;
+font-size:50px;
+margin:10px;
+background:linear-gradient(90deg,#c084fc,#60a5fa);
+-webkit-background-clip:text;
+color:transparent;
 }
 
 .hero h2{
-font-size:30px;
+font-size:28px;
 }
 
-/* typing cursor */
+/* INTRO SECTION */
 
-.typing{
-border-right:3px solid #c084fc;
-padding-right:5px;
-}
-
-/* ABOUT SECTION */
-
-.about{
+.about-section{
 display:flex;
-align-items:center;
 justify-content:center;
-gap:60px;
-padding:120px 10%;
-flex-wrap:wrap;
+align-items:center;
+gap:80px;
+padding:100px;
 }
 
 .about-text{
 max-width:600px;
 }
 
-.about-text h1{
-font-size:40px;
+.about-text h2{
+font-size:36px;
 margin-bottom:20px;
-color:#c084fc;
+background:linear-gradient(90deg,#c084fc,#60a5fa);
+-webkit-background-clip:text;
+color:transparent;
 }
 
 .about-text p{
@@ -131,21 +117,21 @@ line-height:1.8;
 font-size:17px;
 }
 
-.about-img img{
-width:280px;
+.about-image img{
+width:260px;
 border-radius:50%;
-box-shadow:0 10px 30px rgba(0,0,0,0.5);
+border:5px solid #c084fc;
 }
 
-/* RESPONSIVE */
+/* FOOTER */
 
-@media(max-width:900px){
-
-.about{
-flex-direction:column;
+footer{
+margin-top:100px;
 text-align:center;
-}
-
+padding:30px;
+border-top:1px solid #333;
+font-size:14px;
+color:#aaa;
 }
 
 </style>
@@ -154,12 +140,13 @@ text-align:center;
 
 <body>
 
+<!-- NAVBAR -->
+
 <nav>
 
 <div class="logo">EM.</div>
 
 <ul>
-
 <li><a href="index.html">Home</a></li>
 <li><a href="about.html">About</a></li>
 <li><a href="skills.html">Skills</a></li>
@@ -167,7 +154,6 @@ text-align:center;
 <li><a href="certifications.html">Certifications</a></li>
 <li><a href="resume.html">Resume</a></li>
 <li><a href="contact.html">Contact</a></li>
-
 </ul>
 
 </nav>
@@ -176,38 +162,35 @@ text-align:center;
 
 <section class="hero">
 
-<h3>Hi There! 👋</h3>
+<h2>Hi There! 👋</h2>
 
 <h1>I'm Erica Manyama</h1>
 
-<h2 class="typing" id="typing"></h2>
+<h2 id="typing"></h2>
 
 </section>
 
-<!-- INTRODUCTION -->
+<!-- INTRO -->
 
-<section class="about">
+<section class="about-section">
 
 <div class="about-text">
 
-<h1>Let Me Introduce Myself</h1>
+<h2>Let Me Introduce Myself</h2>
 
 <p>
 
-I am an aspiring <b>Data Analyst and Data Scientist</b> passionate about transforming
-data into actionable insights.
+I am an aspiring <b>Data Analyst and Data Scientist</b> passionate about transforming data into meaningful insights.  
 
-I enjoy working with data using tools such as <b>Python, SQL, Excel and Power BI</b>
-to analyze trends, solve problems and support data-driven decision making.
+I enjoy working with tools such as <b>Python, SQL, Excel and Power BI</b> to analyze trends, solve problems and support data-driven decision making.
 
-My goal is to help organizations understand their data better and turn complex
-information into meaningful solutions.
+My goal is to help organizations understand their data better and transform complex information into actionable insights.
 
 </p>
 
 </div>
 
-<div class="about-img">
+<div class="about-image">
 
 <img src="erica.jpg">
 
@@ -215,54 +198,51 @@ information into meaningful solutions.
 
 </section>
 
+<!-- FOOTER -->
+
+<footer>
+
+© 2026 Erica Manyama | Data Analyst & Data Scientist Portfolio
+
+</footer>
+
 <script>
 
-const words = [
-"Data Analyst",
-"Data Scientist"
-];
+const roles=["Data Analyst","Data Scientist"]
 
-let i = 0;
-let j = 0;
-let currentWord = "";
-let isDeleting = false;
+let i=0
+let j=0
+let current=""
+let isDeleting=false
 
 function type(){
 
-currentWord = words[i];
+current=roles[i]
 
 if(isDeleting){
-document.getElementById("typing").textContent =
-currentWord.substring(0, j-1);
-j--;
+document.getElementById("typing").textContent=current.substring(0,j--)
 }else{
-document.getElementById("typing").textContent =
-currentWord.substring(0, j+1);
-j++;
+document.getElementById("typing").textContent=current.substring(0,j++)
 }
 
-if(!isDeleting && j === currentWord.length){
-isDeleting = true;
-setTimeout(type,1000);
-return;
+if(!isDeleting && j===current.length+1){
+isDeleting=true
+setTimeout(type,1000)
+return
 }
 
-if(isDeleting && j === 0){
-isDeleting = false;
-i++;
-if(i === words.length){
-i = 0;
-}
+if(isDeleting && j===0){
+isDeleting=false
+i=(i+1)%roles.length
 }
 
-setTimeout(type,120);
+setTimeout(type,isDeleting?60:120)
 
 }
 
-type();
+type()
 
 </script>
 
 </body>
-
 </html>
