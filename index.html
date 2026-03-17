@@ -158,7 +158,16 @@ border-top:1px solid #333;
 font-size:14px;
 color:#aaa;
 }
-
+.cursor{
+ display:inline-block;
+ margin-left:5px;
+ animation:blink 1s infinite;
+ color:#c084fc
+}
+@keyframes blink{
+  0%,50%,100%{opacity:1;}
+  25%,75%{opacity:0;}
+}
 </style>
 
 </head>
@@ -191,7 +200,9 @@ color:#aaa;
 
 <h1>I'm Erica Manyama</h1>
 
-<h2 id="typing"></h2>
+<h2>
+  <span id="typing"></span><span> class="cursor">|</span>
+</h2>
 
 </section>
 
@@ -212,7 +223,7 @@ Over time, I have developed experience working with tools such as  <strong>Pytho
 </p>
 
 <p>
-I am continously expanding my skill set across various areas of data, learning new technologies,and delivering meaningful data-driven solutions  while growing as a data professional.
+I am continuously expanding my skill set across various areas of data, learning new technologies,and delivering meaningful data-driven solutions  while growing as a data professional.
 </p>
 
 </div>
