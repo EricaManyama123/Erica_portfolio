@@ -205,6 +205,26 @@ transition:0.3s;
 background:#c084fc;
 color:white;
 }
+.btn-primary:hover{
+transform:translateY(-2px);
+box-shadow:0 10px 20px rgba(192,132,252,0.3);
+}
+
+.btn-secondary:hover{
+border-color:#c084fc;
+color:#c084fc;
+}
+.scroll-down{
+margin-top:40px;
+font-size:14px;
+color:#aaa;
+animation:fade 2s infinite;
+}
+
+@keyframes fade{
+0%,100%{opacity:0.3;}
+50%{opacity:1;}
+}
 </style>
 
 </head>
@@ -230,6 +250,7 @@ color:white;
 </nav>
 
 <!-- HERO -->
+<div class="scroll-down">↓ Scroll</div>
 
 <section class="hero">
 
@@ -288,7 +309,7 @@ I am continuously expanding my skill set across various areas of data, learning 
 
 <script>
 
-const roles=["Data Analyst","Data Scientist"]
+const roles=["Data Analyst","Data Scientist","Turning Data into Smart Decisions]
 
 let i=0
 let j=0
